@@ -3,7 +3,6 @@ public class Solution {
     int maxDepth;
     int left;
     public int findBottomLeftValue(TreeNode root) {
-        depth = 0;
         solve(root);
         return left;
     }
