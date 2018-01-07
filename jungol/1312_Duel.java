@@ -12,11 +12,12 @@ public class Main{
 			int set = scan.nextInt();
 			int[] kaist = new int[set];
 			int[] postech = new int[set];
+			
 			for(int i=0; i<set; i++) kaist[i] = scan.nextInt();
 			for(int i=0; i<set; i++) postech[i] = scan.nextInt();
 			Arrays.sort(kaist);
 			Arrays.sort(postech);
-			//int j = set-1;
+			
 			for(int i=set-1, j = set-1; i>=0; i--, j--){
 				while(j>=0 && kaist[i] <= postech[j]) j--;
 				if(j<0) break;
