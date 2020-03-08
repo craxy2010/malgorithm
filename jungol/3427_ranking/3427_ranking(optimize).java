@@ -16,7 +16,6 @@ class Main {
 	static int nEdge;
 	static int start;
 	
-	
 	static void upDfs(int x){
 		for (int i = upRoot[x]; i != 0 ; i = upper[i].next){
 			if (upVisited[upper[i].n] == 0){
@@ -26,6 +25,7 @@ class Main {
 			}
 		}
 	}
+	
 	static void downDfs(int x){
 		for (int i = dwRoot[x]; i != 0; i = lower[i].next){
 			if (dwVisited[lower[i].n] == 0){
@@ -35,6 +35,7 @@ class Main {
 			}
 		}
 	}
+	
 	public static void main(String args[]) throws Exception {
 
 		Scanner sc = new Scanner(System.in);
