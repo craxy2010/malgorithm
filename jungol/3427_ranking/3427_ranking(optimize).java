@@ -1,3 +1,5 @@
+import java.util.*;
+
 class Node{
 	int n;
 	int next;
